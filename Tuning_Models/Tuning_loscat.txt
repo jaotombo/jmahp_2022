@@ -1,0 +1,180 @@
+#=========
+# loscat
+#=========
+
+' average Accuracy for the Neural Network: 0.904
+'
+' average AUC for the NeuralNetwork: 0.809
+'
+' average Importance for the Neural Network '
+'                                           Modalities  Importance
+6                          DestinationPatient_2-Other  100.000000
+21   CategoryOfDisease_15-Chemotherapy - radiotherapy   48.195975
+3                               TypeOfStay_3-Surgical   31.839626
+9            CategoryOfDisease_02-Orthopedic – Trauma   22.995360
+5                                    ViaEmergency_Yes   22.011214
+4                               OriginPatient_2-Other   21.339611
+19  CategoryOfDisease_13-Uronephrology and reprodu...   15.735702
+13      CategoryOfDisease_06-Vascular catheterization   15.430858
+16  CategoryOfDisease_09-Ear Nose and Throat - Sto...   15.038486
+46                                         CH_CHF_Yes   10.806667
+23                 CategoryOfDisease_17-Endocrinology   10.605895
+7   EmergencyPrevious6month_2-At least one non eme...    9.646543
+39                                  CH_MALIGNANCY_Yes    9.643041
+18             CategoryOfDisease_11-Gynecology-Breast    9.046869
+35                                      CH_PLEGIA_Yes    7.840715
+29              CategoryOfDisease_23-Organ Transplant    7.721821
+17                 CategoryOfDisease_10-Ophthalmology    7.618223
+49                                agecat_4(65-84 ans)    7.439342
+42                                          CH_DM_Yes    6.145717
+44                                         CH_CVD_Yes    5.960155
+'
+' Performance sur l'échantillon Test - Accuracy : 0.905
+'
+' Performance sur l'échantillon Test - ROC : 0.810
+'
+' Best Parameters : {'nn': 100, 'nl': 3}
+
+###################################################################
+
+' average Accuracy for the Gradient Boosting : 0.9037321718336324
+'
+' average AUC for the Gradient Boosting : 0.8057658120210544
+'
+' average Importance for the Gradient Boosting  '
+'                                           Modalities  Importance
+6                          DestinationPatient_2-Other  100.000000
+21   CategoryOfDisease_15-Chemotherapy - radiotherapy   47.512764
+3                               TypeOfStay_3-Surgical   25.299537
+9            CategoryOfDisease_02-Orthopedic – Trauma   20.127411
+4                               OriginPatient_2-Other   19.935951
+5                                    ViaEmergency_Yes   19.358915
+16  CategoryOfDisease_09-Ear Nose and Throat - Sto...   12.615568
+39                                  CH_MALIGNANCY_Yes   11.802236
+19  CategoryOfDisease_13-Uronephrology and reprodu...   11.221738
+29              CategoryOfDisease_23-Organ Transplant   10.093274
+23                 CategoryOfDisease_17-Endocrinology    9.863756
+13      CategoryOfDisease_06-Vascular catheterization    9.138351
+46                                         CH_CHF_Yes    8.611584
+18             CategoryOfDisease_11-Gynecology-Breast    7.950934
+49                                agecat_4(65-84 ans)    7.942595
+35                                      CH_PLEGIA_Yes    7.576280
+50                           agecat_5(85 ans et plus)    7.297947
+17                 CategoryOfDisease_10-Ophthalmology    7.226674
+42                                          CH_DM_Yes    5.612093
+14                CategoryOfDisease_07-Cardiovascular    5.358431
+'
+' Performance sur l'échantillon Test - Accuracy : 0.903
+'
+' Performance sur l'échantillon Test - ROC : 0.810
+'
+' Best Parameters : {'subsample': 0.9, 'n_estimators': 300, 'max_features': 'auto', 'max_depth': 4}
+
+#################################################################
+
+ average Accuracy for the Random Forest Classifier: 0.903
+'
+' average AUC for the Random Forest Classifier: 0.810
+'
+' average Importance for the Random Forest Classifier '
+'                                           Modalities  Importance
+6                          DestinationPatient_2-Other  100.000000
+3                               TypeOfStay_3-Surgical   19.186454
+4                               OriginPatient_2-Other   18.384298
+5                                    ViaEmergency_Yes   17.402564
+39                                  CH_MALIGNANCY_Yes   15.916492
+21   CategoryOfDisease_15-Chemotherapy - radiotherapy   11.805094
+46                                         CH_CHF_Yes   10.215170
+29              CategoryOfDisease_23-Organ Transplant    9.411743
+9            CategoryOfDisease_02-Orthopedic – Trauma    9.223543
+42                                          CH_DM_Yes    7.861127
+35                                      CH_PLEGIA_Yes    7.566308
+14                CategoryOfDisease_07-Cardiovascular    7.152633
+12                CategoryOfDisease_05-Nervous system    5.264412
+44                                         CH_CVD_Yes    5.167985
+7   EmergencyPrevious6month_2-At least one non eme...    5.135980
+31                                       CH_RENAL_Yes    5.028818
+50                           agecat_5(85 ans et plus)    4.818372
+10    CategoryOfDisease_03-Multiple or complex trauma    4.107847
+13      CategoryOfDisease_06-Vascular catheterization    3.962052
+16  CategoryOfDisease_09-Ear Nose and Throat - Sto...    3.826233
+'
+' Performance sur l'échantillon Test - Accuracy : 0.903
+'
+' Performance sur l'échantillon Test - ROC : 0.810
+'
+' Best Parameters : {'n_estimators': 350, 'min_samples_leaf': 10, 'max_features': 'auto', 'max_depth': None}
+
+
+#################################################################
+
+' average Accuracy for the Decision Tree Classifier: 0.903
+'
+' average AUC for the Decision Tree Classifier: 0.787
+'
+' average Importance for the Decision Tree Classifier '
+'                                           Modalities  Importance
+6                          DestinationPatient_2-Other  100.000000
+5                                    ViaEmergency_Yes   30.486155
+3                               TypeOfStay_3-Surgical   27.682297
+4                               OriginPatient_2-Other   21.100944
+21   CategoryOfDisease_15-Chemotherapy - radiotherapy   18.134777
+39                                  CH_MALIGNANCY_Yes   17.565838
+9            CategoryOfDisease_02-Orthopedic – Trauma   15.510732
+29              CategoryOfDisease_23-Organ Transplant   11.223057
+46                                         CH_CHF_Yes    9.302499
+42                                          CH_DM_Yes    8.402339
+7   EmergencyPrevious6month_2-At least one non eme...    7.182282
+49                                agecat_4(65-84 ans)    6.807719
+16  CategoryOfDisease_09-Ear Nose and Throat - Sto...    6.737442
+50                           agecat_5(85 ans et plus)    6.361795
+35                                      CH_PLEGIA_Yes    6.025365
+14                CategoryOfDisease_07-Cardiovascular    5.452879
+13      CategoryOfDisease_06-Vascular catheterization    5.422395
+12                CategoryOfDisease_05-Nervous system    5.200336
+44                                         CH_CVD_Yes    3.772047
+10    CategoryOfDisease_03-Multiple or complex trauma    3.618615
+'
+' Performance sur l'échantillon Test - Accuracy : 0.904
+'
+' Performance sur l'échantillon Test - ROC : 0.793
+'
+' Best Parameters : {'min_samples_leaf': 43, 'min_samples_split': 2}
+
+
+#################################################################
+
+'
+' average Accuracy for the penalized Logistic Regression: 0.902
+'
+' average AUC for the penalized Logistic Regression: 0.793
+'
+' average Importance for the Logistic Regression '
+'                                           Modalities  Importance
+6                          DestinationPatient_2-Other  100.000000
+21   CategoryOfDisease_15-Chemotherapy - radiotherapy   53.351216
+9            CategoryOfDisease_02-Orthopedic – Trauma   36.159959
+4                               OriginPatient_2-Other   20.927333
+3                               TypeOfStay_3-Surgical   16.151229
+18             CategoryOfDisease_11-Gynecology-Breast   14.155261
+19  CategoryOfDisease_13-Uronephrology and reprodu...   14.012070
+5                                    ViaEmergency_Yes   13.105339
+16  CategoryOfDisease_09-Ear Nose and Throat - Sto...   13.054098
+49                                agecat_4(65-84 ans)   11.663620
+35                                      CH_PLEGIA_Yes    9.155320
+23                 CategoryOfDisease_17-Endocrinology    8.984204
+29              CategoryOfDisease_23-Organ Transplant    8.471754
+50                           agecat_5(85 ans et plus)    7.859227
+13      CategoryOfDisease_06-Vascular catheterization    7.364133
+17                 CategoryOfDisease_10-Ophthalmology    7.123825
+46                                         CH_CHF_Yes    6.895688
+39                                  CH_MALIGNANCY_Yes    6.206379
+42                                          CH_DM_Yes    5.033198
+48                                agecat_3(45-64 ans)    4.681215
+'
+' Performance sur l'échantillon Test - Accuracy : 0.904
+'
+' Performance sur l'échantillon Test - ROC : 0.794
+'
+' Best Parameters : {'C': 0.21544346900318845, 'l1_ratio': 0.0}
+
